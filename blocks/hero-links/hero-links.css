@@ -1,0 +1,239 @@
+.hero-links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 20px 36px;
+  background-color: #000028;
+  color: #fff;
+  font-family: var(--body-font-family);
+  overflow: hidden;
+}
+
+.hero-links > div {
+  display: block;
+}
+
+.hero-links .hero-links-empty {
+  display: none;
+}
+
+.hero-links p {
+  margin: 0;
+}
+
+.hero-links a,
+.hero-links a:any-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* background picture (contains the section text on its own) */
+.hero-links .hero-links-bg {
+  display: none;
+}
+
+.hero-links .hero-links-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* main content */
+.hero-links .hero-links-content > div > p:first-child {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(255 255 255 / 40%);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: rgb(255 255 255 / 80%);
+}
+
+.hero-links .hero-links-content h1,
+.hero-links .hero-links-content h2,
+.hero-links .hero-links-content h3 {
+  margin: 0 0 16px;
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.hero-links .hero-links-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.hero-links .hero-links-content strong {
+  font-weight: 700;
+}
+
+.hero-links .hero-links-content a::after,
+.hero-links .hero-links-side a::after {
+  content: '\2192';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-left: 12px;
+  border-radius: 50%;
+  background-color: #4a7cf6;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* side links */
+.hero-links .hero-links-side {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.hero-links .hero-links-side > div {
+  padding: 18px 0;
+  font-size: 20px;
+}
+
+.hero-links .hero-links-side > div + div {
+  border-top: 1px solid rgb(255 255 255 / 40%);
+}
+
+.hero-links .hero-links-side a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* icon tiles */
+.hero-links .hero-links-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+}
+
+.hero-links .hero-links-tiles > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  padding: 12px 8px;
+  background-color: #3a5fc4;
+  text-align: center;
+}
+
+.hero-links .hero-links-tiles p {
+  line-height: 1.2;
+}
+
+.hero-links .hero-links-tiles img {
+  display: block;
+  width: auto;
+  height: 30px;
+  margin: 0 auto 10px;
+}
+
+.hero-links .hero-links-tiles a {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (width >= 900px) {
+  .hero-links {
+    display: block;
+    height: 755px;
+    padding: 0;
+    gap: 0;
+  }
+
+  .hero-links .hero-links-bg {
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero-links .hero-links-bg picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* text is already painted by the image: keep it live but invisible */
+  .hero-links .hero-links-content,
+  .hero-links .hero-links-side,
+  .hero-links .hero-links-tiles {
+    position: absolute;
+    color: transparent;
+  }
+
+  .hero-links .hero-links-content *,
+  .hero-links .hero-links-side *,
+  .hero-links .hero-links-tiles * {
+    color: transparent;
+  }
+
+  .hero-links .hero-links-content a::after,
+  .hero-links .hero-links-side a::after {
+    background-color: transparent;
+    color: transparent;
+  }
+
+  .hero-links .hero-links-tiles img {
+    opacity: 0;
+  }
+
+  .hero-links .hero-links-content {
+    top: 64px;
+    left: 70px;
+    width: 330px;
+  }
+
+  .hero-links .hero-links-content h1,
+  .hero-links .hero-links-content h2,
+  .hero-links .hero-links-content h3 {
+    font-size: 47px;
+    line-height: 1.25;
+  }
+
+  .hero-links .hero-links-content p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .hero-links .hero-links-content > div > p:first-child {
+    width: 192px;
+  }
+
+  .hero-links .hero-links-side {
+    top: 56px;
+    right: 50px;
+    width: 230px;
+    padding: 0;
+    text-align: right;
+  }
+
+  .hero-links .hero-links-side > div {
+    padding: 8px 0;
+    font-size: 20px;
+  }
+
+  .hero-links .hero-links-tiles {
+    right: 50px;
+    bottom: 50px;
+    width: 625px;
+    height: 96px;
+    gap: 1px;
+  }
+
+  .hero-links .hero-links-tiles > div {
+    min-height: 0;
+    background-color: transparent;
+  }
+}

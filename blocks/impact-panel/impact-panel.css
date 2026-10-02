@@ -1,0 +1,245 @@
+main .impact-panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 1308px;
+  margin: 0 auto;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+}
+
+main .impact-panel .impact-panel-main {
+  background-color: #fff;
+  min-width: 0;
+}
+
+/* intro */
+main .impact-panel .impact-panel-intro {
+  padding: 32px 24px 36px;
+  color: #fff;
+  background: linear-gradient(100deg, #0021f0 0%, #0046f5 60%, #0066ff 100%);
+}
+
+main .impact-panel .impact-panel-eyebrow {
+  margin: 0 0 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgb(255 255 255 / 30%);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+main .impact-panel .impact-panel-intro h2 {
+  margin: 0 0 24px;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #fff;
+}
+
+main .impact-panel .impact-panel-intro p {
+  margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 1.75;
+  max-width: 540px;
+}
+
+main .impact-panel .impact-panel-intro .impact-panel-eyebrow {
+  max-width: 192px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* CTAs */
+main .impact-panel .impact-panel-cta {
+  margin: 0;
+  font-weight: 700;
+}
+
+main .impact-panel .impact-panel-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main .impact-panel .impact-panel-link::after {
+  content: '\2192';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4d7bff;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+main .impact-panel .impact-panel-link:hover {
+  text-decoration: underline;
+}
+
+/* stats */
+main .impact-panel .impact-panel-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 24px 16px 0;
+  color: #1a0f6e;
+  text-align: center;
+}
+
+main .impact-panel .impact-panel-stat {
+  min-width: 0;
+}
+
+main .impact-panel .impact-panel-stat p {
+  margin: 0;
+}
+
+main .impact-panel .impact-panel-stat-icon {
+  min-height: 52px;
+}
+
+main .impact-panel .impact-panel-stat-icon picture,
+main .impact-panel .impact-panel-stat-icon img {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+main .impact-panel .impact-panel-stat-value {
+  color: #1a0fe0;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+main .impact-panel .impact-panel-stat-label {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+main .impact-panel .impact-panel-note {
+  padding: 16px 24px 24px;
+  text-align: right;
+  font-size: 12px;
+  font-style: italic;
+  color: #3d5cff;
+}
+
+main .impact-panel .impact-panel-note p {
+  margin: 0;
+}
+
+/* promo */
+main .impact-panel .impact-panel-promo {
+  display: flex;
+  flex-direction: column;
+  background-color: #14105c;
+  color: #fff;
+}
+
+main .impact-panel .impact-panel-promo-image {
+  line-height: 0;
+}
+
+main .impact-panel .impact-panel-promo-image picture,
+main .impact-panel .impact-panel-promo-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .impact-panel .impact-panel-promo-body {
+  padding: 28px 30px 32px;
+}
+
+main .impact-panel .impact-panel-promo-body .impact-panel-eyebrow {
+  margin: 0 0 28px;
+  padding-bottom: 28px;
+  max-width: 192px;
+  border-bottom: 1px solid rgb(255 255 255 / 30%);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+main .impact-panel .impact-panel-promo-body h2 {
+  margin: 0 0 12px;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+}
+
+main .impact-panel .impact-panel-promo-body p {
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main .impact-panel .impact-panel-promo-body .impact-panel-link {
+  color: #4d7bff;
+}
+
+@media (min-width: 900px) {
+  main .impact-panel {
+    grid-template-columns: minmax(0, 981fr) minmax(0, 295fr);
+    align-items: stretch;
+  }
+
+  main .impact-panel .impact-panel-intro {
+    padding: 56px 78px 60px;
+  }
+
+  main .impact-panel .impact-panel-intro h2 {
+    font-size: 47px;
+    line-height: 1.25;
+    margin-bottom: 40px;
+  }
+
+  main .impact-panel .impact-panel-intro p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  main .impact-panel .impact-panel-eyebrow {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    font-size: 12px;
+  }
+
+  main .impact-panel .impact-panel-stats {
+    gap: 24px;
+    padding: 20px 0 0;
+  }
+
+  main .impact-panel .impact-panel-stat-value {
+    font-size: 75px;
+    line-height: 1.1;
+  }
+
+  main .impact-panel .impact-panel-stat-label {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 0 24px;
+  }
+
+  main .impact-panel .impact-panel-note {
+    padding: 16px 40px 24px;
+  }
+}

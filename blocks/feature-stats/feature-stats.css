@@ -1,0 +1,231 @@
+.feature-stats {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  background-color: #1d1d1d;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  padding: 24px 0 16px;
+  overflow: hidden;
+}
+
+.feature-stats .feature-stats-row {
+  display: block;
+}
+
+.feature-stats .feature-stats-empty {
+  display: none;
+}
+
+/* text */
+.feature-stats .feature-stats-text {
+  position: relative;
+  z-index: 2;
+  padding: 0 24px 24px;
+}
+
+.feature-stats .feature-stats-eyebrow {
+  margin: 0 0 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgb(255 255 255 / 50%);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  color: rgb(255 255 255 / 70%);
+}
+
+.feature-stats .feature-stats-text h1,
+.feature-stats .feature-stats-text h2,
+.feature-stats .feature-stats-text h3 {
+  margin: 0 0 16px;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.feature-stats .feature-stats-text p {
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.feature-stats .feature-stats-text p.feature-stats-eyebrow {
+  margin-bottom: 24px;
+}
+
+.feature-stats .feature-stats-text strong {
+  font-weight: 700;
+}
+
+.feature-stats .feature-stats-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b78ff;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.feature-stats .feature-stats-cta::after {
+  content: '\2192';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4b78ff;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.feature-stats .feature-stats-cta:hover {
+  text-decoration: underline;
+}
+
+/* picture */
+.feature-stats .feature-stats-media {
+  line-height: 0;
+}
+
+.feature-stats .feature-stats-media picture,
+.feature-stats .feature-stats-media img {
+  display: block;
+  width: 100%;
+}
+
+.feature-stats .feature-stats-media img {
+  height: auto;
+  aspect-ratio: 390 / 270;
+  object-fit: cover;
+}
+
+/* stats bar */
+.feature-stats .feature-stats-numbers {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: -83px 24px 0;
+  padding: 16px 8px;
+  border-radius: 12px;
+  background-color: rgb(20 15 130 / 85%);
+  text-align: center;
+}
+
+.feature-stats .feature-stats-numbers .feature-stats-cell {
+  min-width: 0;
+}
+
+.feature-stats .feature-stats-value {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.feature-stats .feature-stats-label {
+  margin: 8px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #fff;
+}
+
+/* footnote */
+.feature-stats .feature-stats-note {
+  padding: 12px 24px 0;
+  text-align: right;
+}
+
+.feature-stats .feature-stats-note p {
+  margin: 0;
+  font-size: 11px;
+  font-style: italic;
+  color: #4b78ff;
+}
+
+@media (min-width: 900px) {
+  .feature-stats {
+    grid-template-columns: 377px minmax(0, 1fr);
+    padding: 80px 59px 16px;
+  }
+
+  .feature-stats .feature-stats-text {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 520px;
+    padding: 0;
+  }
+
+  .feature-stats .feature-stats-eyebrow {
+    width: 192px;
+    margin-bottom: 32px;
+  }
+
+  .feature-stats .feature-stats-text h1,
+  .feature-stats .feature-stats-text h2,
+  .feature-stats .feature-stats-text h3 {
+    margin-bottom: 24px;
+    font-size: 52px;
+    line-height: 1.1;
+  }
+
+  .feature-stats .feature-stats-text p {
+    max-width: 300px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .feature-stats .feature-stats-text p.feature-stats-eyebrow {
+    max-width: none;
+    font-size: 12px;
+  }
+
+  .feature-stats .feature-stats-text p:has(.feature-stats-cta) {
+    max-width: none;
+  }
+
+  .feature-stats .feature-stats-media {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .feature-stats .feature-stats-media img {
+    aspect-ratio: 945 / 590;
+  }
+
+  .feature-stats .feature-stats-numbers {
+    grid-column: 2;
+    grid-row: 2;
+    gap: 24px;
+    margin: -97px -22px 0 175px;
+    padding: 20px 24px 16px;
+  }
+
+  .feature-stats .feature-stats-value {
+    font-size: 56px;
+  }
+
+  .feature-stats .feature-stats-label {
+    font-size: 14px;
+  }
+
+  .feature-stats .feature-stats-note {
+    grid-column: 2;
+    grid-row: 3;
+    padding: 8px 22px 0 0;
+  }
+
+  .feature-stats .feature-stats-note p {
+    font-size: 12px;
+  }
+}

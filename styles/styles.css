@@ -323,3 +323,28 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* eds-poc:migration-tokens:medtronic-com:a0ec29ff start */
+:root {
+  --background-color: rgb(245, 245, 245);
+  --light-color: rgb(240, 240, 240);
+  --dark-color: rgba(0, 0, 0, 0.533);
+  --text-color: rgba(0, 0, 0, 0.9);
+  --link-color: rgb(255, 255, 255);
+  --body-font-family: AvenirNextWorld, "AvenirNextWorld Fallback", "avenir next", avenir, Effra, helvetica, arial, sans-serif;
+  --heading-font-family: AvenirNextWorld, sans-serif;
+  --body-font-size-m: 16px;
+  --heading-font-size-xxl: 75.2px;
+  --heading-font-size-xl: 47px;
+  --heading-font-size-l: 24px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 16px;
+  --heading-font-size-xs: 32.9px;
+  --nav-height: 64px;
+}
+/* eds-poc:migration-tokens:medtronic-com:a0ec29ff end */
+
+/* eds-poc:migration-overrides:medtronic-com:a0ec29ff start */
+.hero.mig-en-us-index-1{box-sizing:border-box;min-height:770px;}
+@media (min-width: 900px){.hero.mig-en-us-index-1{min-height:min(533px, 37.01vw);}}
+/* eds-poc:migration-overrides:medtronic-com:a0ec29ff end */
