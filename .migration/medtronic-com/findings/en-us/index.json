@@ -15,7 +15,7 @@
     "version": 4,
     "sourceUrl": "https://www.medtronic.com/en-us/index.html",
     "sourceRevision": "b44f63d70afe9e5d74d1cb57b789b57095b6c52db7ae6124f99536d748b6d754",
-    "capturedAt": "2026-10-02T17:51:43.077Z",
+    "capturedAt": "2026-10-02T18:17:53.137Z",
     "nav": {
       "present": false,
       "complete": true,
@@ -1514,10 +1514,7 @@
               "legal": [],
               "breakpoints": [
                 320,
-                400,
                 405,
-                425,
-                426,
                 430,
                 431,
                 450,
@@ -1525,8 +1522,6 @@
                 480,
                 490,
                 500,
-                530,
-                550,
                 576,
                 600,
                 650,
@@ -1539,17 +1534,22 @@
                 861,
                 864,
                 865,
-                890,
-                896,
-                897,
-                900
+                900,
+                959,
+                960,
+                992,
+                998,
+                1000,
+                1023,
+                1024,
+                1064
               ]
             }
           },
           "image": {
-            "id": "f116229980c7e129b3d1e767cd9c13e5c35a9d217229acaec6d192b42e1f4af0",
+            "id": "80376131bdf345073134930e3cca62819f71470cbe7fc3ba0991da602dd091e5",
             "mediaType": "image/png",
-            "bytes": 51416
+            "bytes": 41744
           }
         },
         {
@@ -3040,10 +3040,7 @@
               "legal": [],
               "breakpoints": [
                 320,
-                400,
                 405,
-                425,
-                426,
                 430,
                 431,
                 450,
@@ -3051,8 +3048,6 @@
                 480,
                 490,
                 500,
-                530,
-                550,
                 576,
                 600,
                 650,
@@ -3065,17 +3060,22 @@
                 861,
                 864,
                 865,
-                890,
-                896,
-                897,
-                900
+                900,
+                959,
+                960,
+                992,
+                998,
+                1000,
+                1023,
+                1024,
+                1064
               ]
             }
           },
           "image": {
-            "id": "a20b3ca1ce63947fdd1230ef85c19b2787c8bdf9dace739bec65fa52672e6d2c",
+            "id": "b2f4340027c93ade87f7021c3f3af050d66184ff0dfdb5180c292e83d57c076b",
             "mediaType": "image/png",
-            "bytes": 48865
+            "bytes": 38346
           }
         }
       ],
@@ -3083,15 +3083,6 @@
       "warnings": []
     },
     "assets": [
-      {
-        "sourceUrl": "https://www.medtronic.com/etc.clientlibs/medtronic/clientlibs/clientlib-site/resources/fonts/AvenirNextWorld/woff2/AvenirNextWorld-Bold.woff2",
-        "path": "media/migration/cc9f00e62c6c1d7e99bccfb86b289efba9272f1574df353d7d0e43048d7c970f.woff2",
-        "artifact": {
-          "id": "cc9f00e62c6c1d7e99bccfb86b289efba9272f1574df353d7d0e43048d7c970f",
-          "mediaType": "font/woff2",
-          "bytes": 13644
-        }
-      },
       {
         "sourceUrl": "https://www.medtronic.com/etc.clientlibs/medtronic/clientlibs/clientlib-site/resources/fonts/AvenirNextWorld/woff2/AvenirNextWorld-Demi.woff2",
         "path": "media/migration/96f6c569d3845e83722ed9ca78f85da7e3cf5ce600aa7ef285dd486c7f53e638.woff2",
@@ -3102,12 +3093,12 @@
         }
       },
       {
-        "sourceUrl": "https://www.medtronic.com/etc.clientlibs/medtronic/clientlibs/clientlib-site/resources/fonts/AvenirNextWorld/woff2/AvenirNextWorld-Thin.woff2",
-        "path": "media/migration/d41ca6bab0ef26bca09dbb1c5e9e178ec636ed87593e10fade3e4c5fee051b32.woff2",
+        "sourceUrl": "https://www.medtronic.com/etc.clientlibs/medtronic/clientlibs/clientlib-site/resources/fonts/AvenirNextWorld/woff2/AvenirNextWorld-Bold.woff2",
+        "path": "media/migration/cc9f00e62c6c1d7e99bccfb86b289efba9272f1574df353d7d0e43048d7c970f.woff2",
         "artifact": {
-          "id": "d41ca6bab0ef26bca09dbb1c5e9e178ec636ed87593e10fade3e4c5fee051b32",
+          "id": "cc9f00e62c6c1d7e99bccfb86b289efba9272f1574df353d7d0e43048d7c970f",
           "mediaType": "font/woff2",
-          "bytes": 13492
+          "bytes": 13644
         }
       },
       {
@@ -3126,6 +3117,15 @@
           "id": "43c676e1055ad0b3f5a4c8d0de6f6cc4ff040cf5ec0a7aaf721a17b867df5438",
           "mediaType": "font/woff",
           "bytes": 67660
+        }
+      },
+      {
+        "sourceUrl": "https://www.medtronic.com/etc.clientlibs/medtronic/clientlibs/clientlib-site/resources/fonts/AvenirNextWorld/woff2/AvenirNextWorld-Thin.woff2",
+        "path": "media/migration/d41ca6bab0ef26bca09dbb1c5e9e178ec636ed87593e10fade3e4c5fee051b32.woff2",
+        "artifact": {
+          "id": "d41ca6bab0ef26bca09dbb1c5e9e178ec636ed87593e10fade3e4c5fee051b32",
+          "mediaType": "font/woff2",
+          "bytes": 13492
         }
       },
       {
@@ -3516,9 +3516,9 @@
       {
         "viewport": "desktop",
         "image": {
-          "id": "1f90cb93fa14c88964c394a213090006590c0e3336b317ad357154e811a13ff8",
+          "id": "aa501575d17b46a5558f534c1cfce15a55cb86d8d0c35668cfb273eeb33b2955",
           "mediaType": "image/png",
-          "bytes": 3617319
+          "bytes": 3898882
         },
         "sections": [
           {
@@ -4317,9 +4317,9 @@
       {
         "viewport": "mobile",
         "image": {
-          "id": "bcacd8da06c48d829c70a0a9308a0f59cca454ac5963e21a8d7bec7f7ca4bdc8",
+          "id": "3b5e9338c574bc9a8fdb25e6f07a6693f3c6bf07ae5935c893dc831813a6a89f",
           "mediaType": "image/png",
-          "bytes": 834806
+          "bytes": 836828
         },
         "sections": [
           {

@@ -32,6 +32,6 @@ Notes from the analysis of https://www.medtronic.com/en-us/index.html:
 
 ## Documents to paste
 
-- **header**: https://da.live/edit#/pradeepgupta-eds/med-poc/header (version `93636fa0`, generated 2026-10-02T17:57:25.233Z, source revision `b44f63d7`) — a shared path: pasting replaces any page already there (DA content is not isolated by git branches).
+- **header**: https://da.live/edit#/pradeepgupta-eds/med-poc/header (version `93636fa0`, generated 2026-10-02T18:18:38.356Z, source revision `b44f63d7`) — a shared path: pasting replaces any page already there (DA content is not isolated by git branches).
 - **footer**: https://da.live/edit#/pradeepgupta-eds/med-poc/footer (version `c1913c07`, generated 2026-10-02T17:59:35.098Z, source revision `b44f63d7`) — a shared path: pasting replaces any page already there (DA content is not isolated by git branches).
 - **en-us/index**: https://da.live/edit#/pradeepgupta-eds/med-poc/en-us/index (version `604c045e`, generated 2026-10-02T17:53:54.650Z, source revision `b44f63d7`) — a shared path: pasting replaces any page already there (DA content is not isolated by git branches).
